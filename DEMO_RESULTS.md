@@ -35,7 +35,7 @@ After all five demos, `get_counts` returned `{"demo_results":5,"reports":0,"site
 | 4 | B | `assess(0)` | **NEEDS_AMENDMENT**, missing who, when, where, actions | [sent-back](sent-back.png) |
 | 5 | B | `amend_report(0, full report)` | SUBMITTED, version 2, new report_hash | [report-amended](report-amended.png) |
 | 6 | B | `assess(0)` | **AWAITING_SIGN_OFF**, nothing missing, severity HIGH, escalation required | [assessed-high](assessed-high.png) |
-| 7 | A | `sign_off(0, report_hash, note)` | **CLOSED**, signed off | [signed-off](signed-off.png) |
+| 7 | A | `sign_off(0, report_hash, note)` | **CLOSED**, signed off | [signed-off](sign-off.png) |
 | 8 | any | `get_site(0)` | filed 1, sent_back 1, closed 1, HIGH 1 | [site-stats](site-stats.png) |
 | 9 | any | `get_officer_record(B)` | closed 1, sent_back 1, complete_first_time 0 | [officer-record](officer-record.png) |
 
@@ -51,4 +51,4 @@ An earlier deployment of this contract (`0x81…F26A`) passed demos 1 to 4, but 
 
 - Every write was sent once. No transaction was resent while pending.
 - Every step was checked with a read method, not just the transaction status.
-- Full transaction list: [transactions](transactions.png).
+- Full transaction list: [transactions](transaction.png).
